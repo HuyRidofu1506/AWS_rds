@@ -7,7 +7,7 @@ $dbname = "myDB";
 // Tạo kết nối đến database
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Kiểm tra kết nối
-($conn->connect_error) {
+if ($conn->connect_error) {
  die("Kết nối không thành công: " . $conn->connect_error);
 }
 // Kiểm tra nếu form đã submit
